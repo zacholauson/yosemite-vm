@@ -22,5 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     chef.add_recipe("homebrew::brew")
     chef.add_recipe("homebrew::cask")
+
+    chef.add_recipe("tmux::install")
   end
 end
