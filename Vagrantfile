@@ -25,5 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     chef.add_recipe("zsh::install")
     chef.add_recipe("tmux::install")
+
+    chef.add_recipe("dotfiles::install")
   end
 end
